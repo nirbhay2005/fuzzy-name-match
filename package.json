@@ -1,0 +1,41 @@
+{
+  "name": "fuzzy-name-match",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    }
+  },
+  "scripts": {
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build": "npm run build:cjs && npm run build:esm"
+  },
+  "keywords": [
+    "nodejs",
+    "utility",
+    "name",
+    "match",
+    "score",
+    "name-match",
+    "fuzzy-match",
+    "name-comparison",
+    "string-similarity",
+    "levenshtein"
+  ],
+  "author": "Nirbhay Mishra",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}

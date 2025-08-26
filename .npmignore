@@ -1,0 +1,25 @@
+# Don’t publish source TS
+src/
+*.ts
+*.tsx
+
+# Tests
+test/
+__tests__/
+coverage/
+
+# Config & env
+tsconfig.json
+jest.config.js
+*.log
+.env*
+
+# IDE & system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Git files
+.gitignore
+.npmignore
