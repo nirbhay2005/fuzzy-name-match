@@ -182,6 +182,4 @@ const nameMatchResult = (name1 : string, name2 : string, config: INameMatchConfi
     };
 };
 
-console.log(nameMatchResult('Mr. Niraj kumar Mishra', 'Nirbhay k Mishra'))
-
 export {nameMatchResult};
