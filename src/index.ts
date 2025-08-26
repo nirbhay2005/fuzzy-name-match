@@ -115,8 +115,6 @@ const nameMatchResult = (name1 : string, name2 : string, config: INameMatchConfi
         const firstName2 = fullname2[0] ?? "";
         const lastName2 = fullname2.slice(1).join(" ") ?? "";
 
-        console.log(fullname1, fullname1.length)
-        console.log({firstname1, lastname1,firstName2, lastName2})
         let reverseCheckScore : number;
         let firstLastNameScore : number;
         let lastFirstNameScore : number;
@@ -155,8 +153,6 @@ const nameMatchResult = (name1 : string, name2 : string, config: INameMatchConfi
     } else {
         const permutations = permute(fullname1);
         let bestScore = 0;
-
-        console.log({permutations})
 
         for (const perm of permutations) {
             const permStr = perm.join(" ");
